@@ -27,6 +27,7 @@ export class EditComponent implements OnInit {
     //this.route.paramMap.subscribe((param)=>{
     //  var id = Number(param.get.('id'));
     //  })
+    console.log(this.route)
 
     this.route.paramMap.subscribe((param) => {
       var id = Number(param.get('id'));

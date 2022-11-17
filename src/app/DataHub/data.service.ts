@@ -26,5 +26,10 @@ export class DataService {
       return this.http.put<Data>(`http://localhost:3000/Datahub/${data.id}`,data);
 
     }
+    removeDataById(id:number){
+      return this.http.delete<Data>(`http://localhost:3000/Datahub/${id}`);
+
+
+    }
     
   }
